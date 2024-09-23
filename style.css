@@ -1,59 +1,115 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.container{
+
+.container {
     background-color: #E6F7FF;
-    height: 151vh;
+    min-height: 100vh; 
     color: #333333;
-    border: 8px  solid #FFD700;
+    border: 8px solid #FFD700;
+    padding: 20px; 
 }
-h1{
+
+h1 {
     color: #002147;
     text-align: center;
 }
-h2{
-    color: #002147 
+
+h2 {
+    color: #002147;
 }
+
 blockquote {
     font-style: italic;
     font-size: larger;
     color: #555555;
     text-align: center;
-    border-left: 4px solid #FFD700; 
-     margin-top: 7px;
+    border-left: 4px solid #FFD700;
+    margin-top: 7px;
+    padding-left: 10px;
 }
+
 img {
-    
-        
-        height: 37vh;
-         border: 4px solid #FFD700; 
-         border-radius: 55px; 
-         display: block;
-      margin: 20px 37%; 
-     
-    
-    
- } 
- .caption {
+    width: 100%; 
+    max-width: 400px; 
+    height: auto;
+    border: 4px solid #FFD700;
+    border-radius: 55px;
+    display: block;
+    margin: 20px auto; }
+
+.caption {
     text-align: center;
     color: #0e0e0ee7;
-    margin-left: -20px; 
-    margin-top: -10px;  
+    margin-top: -10px;
     font-style: italic;
-}  
-.text{
-    max-width: 400px;
 }
-.intro,.intro1,.contributions, .presidency, .inspiration, .legacy, .timeline, .closing {
-    padding: 3px;
-    margin-left: 50px;  
+
+.intro, .intro1, .contributions, .presidency, .inspiration, .legacy, .timeline, .closing {
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 800px; 
     color: #0e0e0ee7;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Media Queries for responsiveness */
 
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+    img {
+        width: 90%; 
+    }
 
+    .container {
+        border-width: 4px;
+    }
 
+    h1, h2 {
+        font-size: 1.5rem; 
+    }
 
+    blockquote {
+        font-size: 1.1rem; 
+    }
 
+    .intro, .intro1, .contributions, .presidency, .inspiration, .legacy, .timeline, .closing {
+        margin-left: 0;
+        padding: 10px;
+    }
+}
+
+/* For tablet devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    img {
+        width: 80%; 
+    }
+
+    .intro, .intro1, .contributions, .presidency, .inspiration, .legacy, .timeline, .closing {
+        max-width: 90%;
+        margin-left: 20px; 
+    }
+}
+
+/* For desktop screens */
+@media only screen and (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 50%; 
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 2.5rem; 
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
