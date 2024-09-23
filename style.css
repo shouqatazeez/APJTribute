@@ -87,7 +87,7 @@ img {
         width: 80%; 
     }
 
-    .intro, .intro1, .contributions, .presidency, .inspiration, .legacy, .timeline, .closing {
+    .intro, .intro1, .contributions, .presidency, .inspiration, .legacy, .timeline{
         max-width: 90%;
         margin-left: 20px; 
     }
